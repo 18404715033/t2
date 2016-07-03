@@ -14,6 +14,12 @@
 		180672021D265AEB001F527A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180672001D265AEB001F527A /* LaunchScreen.storyboard */; };
 		1806720D1D265AEB001F527A /* t2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806720C1D265AEB001F527A /* t2Tests.swift */; };
 		180672181D265AEB001F527A /* t2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180672171D265AEB001F527A /* t2UITests.swift */; };
+		180672291D265AF8001F527A /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180672261D265AF8001F527A /* SQLiteDB.swift */; };
+		1806722A1D265AF8001F527A /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180672271D265AF8001F527A /* SQLTable.swift */; };
+		1806722B1D265AF8001F527A /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180672281D265AF8001F527A /* String-Extras.swift */; };
+		180672301D265B71001F527A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1806722F1D265B71001F527A /* libsqlite3.0.tbd */; };
+		180672321D265FF4001F527A /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 180672311D265FF4001F527A /* data.db */; };
+		180672A91D267CDA001F527A /* selectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180672A81D267CDA001F527A /* selectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,13 @@
 		180672131D265AEB001F527A /* t2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = t2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180672171D265AEB001F527A /* t2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = t2UITests.swift; sourceTree = "<group>"; };
 		180672191D265AEB001F527A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180672261D265AF8001F527A /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		180672271D265AF8001F527A /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
+		180672281D265AF8001F527A /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		1806722E1D265B42001F527A /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		1806722F1D265B71001F527A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		180672311D265FF4001F527A /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = data.db; path = ../hangge_645/data.db; sourceTree = "<group>"; };
+		180672A81D267CDA001F527A /* selectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180672301D265B71001F527A /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +91,9 @@
 		180671EB1D265AEB001F527A = {
 			isa = PBXGroup;
 			children = (
+				1806722F1D265B71001F527A /* libsqlite3.0.tbd */,
+				180672311D265FF4001F527A /* data.db */,
+				180672251D265AF8001F527A /* SQLiteDB */,
 				180671F61D265AEB001F527A /* t2 */,
 				1806720B1D265AEB001F527A /* t2Tests */,
 				180672161D265AEB001F527A /* t2UITests */,
@@ -99,10 +116,12 @@
 			children = (
 				180671F71D265AEB001F527A /* AppDelegate.swift */,
 				180671F91D265AEB001F527A /* ViewController.swift */,
+				180672A81D267CDA001F527A /* selectViewController.swift */,
 				180671FB1D265AEB001F527A /* Main.storyboard */,
 				180671FE1D265AEB001F527A /* Assets.xcassets */,
 				180672001D265AEB001F527A /* LaunchScreen.storyboard */,
 				180672031D265AEB001F527A /* Info.plist */,
+				1806722E1D265B42001F527A /* Header.h */,
 			);
 			path = t2;
 			sourceTree = "<group>";
@@ -123,6 +142,17 @@
 				180672191D265AEB001F527A /* Info.plist */,
 			);
 			path = t2UITests;
+			sourceTree = "<group>";
+		};
+		180672251D265AF8001F527A /* SQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+				180672261D265AF8001F527A /* SQLiteDB.swift */,
+				180672271D265AF8001F527A /* SQLTable.swift */,
+				180672281D265AF8001F527A /* String-Extras.swift */,
+			);
+			name = SQLiteDB;
+			path = ../SQLiteDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				180672021D265AEB001F527A /* LaunchScreen.storyboard in Resources */,
+				180672321D265FF4001F527A /* data.db in Resources */,
 				180671FF1D265AEB001F527A /* Assets.xcassets in Resources */,
 				180671FD1D265AEB001F527A /* Main.storyboard in Resources */,
 			);
@@ -256,6 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1806722B1D265AF8001F527A /* String-Extras.swift in Sources */,
+				180672291D265AF8001F527A /* SQLiteDB.swift in Sources */,
+				180672A91D267CDA001F527A /* selectViewController.swift in Sources */,
+				1806722A1D265AF8001F527A /* SQLTable.swift in Sources */,
 				180671FA1D265AEB001F527A /* ViewController.swift in Sources */,
 				180671F81D265AEB001F527A /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +440,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = baozi.t2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/apple/Desktop/t2/t2/Header.h;
 			};
 			name = Debug;
 		};
@@ -416,6 +452,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = baozi.t2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/apple/Desktop/t2/t2/Header.h;
 			};
 			name = Release;
 		};
@@ -484,6 +521,7 @@
 				1806721E1D265AEB001F527A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1806721F1D265AEB001F527A /* Build configuration list for PBXNativeTarget "t2Tests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +530,7 @@
 				180672211D265AEB001F527A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		180672221D265AEB001F527A /* Build configuration list for PBXNativeTarget "t2UITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +539,7 @@
 				180672241D265AEB001F527A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
