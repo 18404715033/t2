@@ -20,6 +20,9 @@
 		180672301D265B71001F527A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1806722F1D265B71001F527A /* libsqlite3.0.tbd */; };
 		180672321D265FF4001F527A /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 180672311D265FF4001F527A /* data.db */; };
 		180672A91D267CDA001F527A /* selectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180672A81D267CDA001F527A /* selectViewController.swift */; };
+		18329D7D1D2ADAD8004EE674 /* delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18329D7C1D2ADAD8004EE674 /* delete.swift */; };
+		18329D7F1D2ADDD4004EE674 /* delete1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18329D7E1D2ADDD4004EE674 /* delete1.swift */; };
+		18329D811D2AE41D004EE674 /* select.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18329D801D2AE41D004EE674 /* select.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		1806722F1D265B71001F527A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		180672311D265FF4001F527A /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = data.db; path = ../hangge_645/data.db; sourceTree = "<group>"; };
 		180672A81D267CDA001F527A /* selectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectViewController.swift; sourceTree = "<group>"; };
+		18329D7C1D2ADAD8004EE674 /* delete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delete.swift; sourceTree = "<group>"; };
+		18329D7E1D2ADDD4004EE674 /* delete1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delete1.swift; sourceTree = "<group>"; };
+		18329D801D2AE41D004EE674 /* select.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = select.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,9 @@
 				180672001D265AEB001F527A /* LaunchScreen.storyboard */,
 				180672031D265AEB001F527A /* Info.plist */,
 				1806722E1D265B42001F527A /* Header.h */,
+				18329D7C1D2ADAD8004EE674 /* delete.swift */,
+				18329D7E1D2ADDD4004EE674 /* delete1.swift */,
+				18329D801D2AE41D004EE674 /* select.swift */,
 			);
 			path = t2;
 			sourceTree = "<group>";
@@ -287,9 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18329D7D1D2ADAD8004EE674 /* delete.swift in Sources */,
 				1806722B1D265AF8001F527A /* String-Extras.swift in Sources */,
 				180672291D265AF8001F527A /* SQLiteDB.swift in Sources */,
 				180672A91D267CDA001F527A /* selectViewController.swift in Sources */,
+				18329D7F1D2ADDD4004EE674 /* delete1.swift in Sources */,
+				18329D811D2AE41D004EE674 /* select.swift in Sources */,
 				1806722A1D265AF8001F527A /* SQLTable.swift in Sources */,
 				180671FA1D265AEB001F527A /* ViewController.swift in Sources */,
 				180671F81D265AEB001F527A /* AppDelegate.swift in Sources */,

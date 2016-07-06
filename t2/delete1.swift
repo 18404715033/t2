@@ -8,9 +8,11 @@
 
 import UIKit
 
-class selectViewController: UIViewController {
+class delete1: UIViewController {
     var db:SQLiteDB!
     
+    @IBOutlet weak var y: UITextField!
+    @IBOutlet weak var z: UITextField!
     @IBOutlet weak var x: UITextView!
     
     
@@ -25,33 +27,23 @@ class selectViewController: UIViewController {
         //db.execute("create table if not exists tuser(uid integer primary key,uname varchar(20),email varchar(20),mobile varchar(20),address vatchar(20))")
         //print("fffff")
         //如果有数据则加载
-        initUser()
+        //initUser()
         
         
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-
-    @IBAction func chax(sender: AnyObject) {
-        initUser()
-        
-    }
     
-    func initUser() {
-        let data = db.query("select * from tuser")
-        for var i=0; i < data.count;i++
-        {
-            //获取最后一行数据显示
-            var user = data[i]
-            x.text! += "\(i)"
-            x.text! += " 用户名："+String(user["uname"]!)  + "电话："+String(user["mobile"]!)+"邮箱："+String(user["email"]!)+"\n"
-            x.text! += "地址： "+String(user["address"]!)+"\n"
-            //print( "\n")
-            
-        }
-        
+    @IBAction func deletemobile(sender: AnyObject) {
+        delete()
     }
-    
+    func delete()
+    {
+        let value = z.text!
+        let sql = "delete from tuser where uname='\(value)'"
+        let result = db.execute(sql)
+        print(result)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -60,4 +52,3 @@ class selectViewController: UIViewController {
     
     
 }
-

@@ -8,11 +8,12 @@
 
 import UIKit
 
-class selectViewController: UIViewController {
+class select: UIViewController {
     var db:SQLiteDB!
     
-    @IBOutlet weak var x: UITextView!
-    
+    @IBOutlet weak var q: UITextField!
+
+    @IBOutlet weak var w: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,33 +26,35 @@ class selectViewController: UIViewController {
         //db.execute("create table if not exists tuser(uid integer primary key,uname varchar(20),email varchar(20),mobile varchar(20),address vatchar(20))")
         //print("fffff")
         //如果有数据则加载
-        initUser()
+        //initUser()
         
         
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-
-    @IBAction func chax(sender: AnyObject) {
-        initUser()
+    
+    
+    @IBAction func selectname(sender: AnyObject) {
+        select()
         
     }
     
-    func initUser() {
-        let data = db.query("select * from tuser")
+    func select()
+    {
+        let value = q.text!
+        let data = db.query("select * from tuser where mobile='\(value)'")
         for var i=0; i < data.count;i++
         {
             //获取最后一行数据显示
             var user = data[i]
-            x.text! += "\(i)"
-            x.text! += " 用户名："+String(user["uname"]!)  + "电话："+String(user["mobile"]!)+"邮箱："+String(user["email"]!)+"\n"
-            x.text! += "地址： "+String(user["address"]!)+"\n"
+            w.text! += " 用户名："+String(user["uname"]!)  + "电话："+String(user["mobile"]!)+"邮箱："+String(user["email"]!)+"\n"
+            w.text! += "地址： "+String(user["address"]!)+"\n"
             //print( "\n")
             
         }
+
         
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -60,4 +63,3 @@ class selectViewController: UIViewController {
     
     
 }
-
