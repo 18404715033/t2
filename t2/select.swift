@@ -36,6 +36,7 @@ class select: UIViewController {
     
     @IBAction func selectname(sender: AnyObject) {
         select()
+        q.resignFirstResponder()
         
     }
     

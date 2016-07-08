@@ -36,11 +36,12 @@ class delete1: UIViewController {
     
     @IBAction func deletemobile(sender: AnyObject) {
         delete()
+        z.resignFirstResponder()
     }
     func delete()
     {
         let value = z.text!
-        let sql = "delete from tuser where uname='\(value)'"
+        let sql = "delete from tuser where mobile='\(value)'"
         let result = db.execute(sql)
         print(result)
     }

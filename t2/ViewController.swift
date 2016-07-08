@@ -45,6 +45,9 @@ class ViewController: UIViewController {
     @IBAction func chax(sender: AnyObject) {
         initUser()
     }
+    @IBAction func back(sender: AnyObject) {
+        txtdi.resignFirstResponder()
+    }
     
     func initUser() {
         let data = db.query("select * from tuser")

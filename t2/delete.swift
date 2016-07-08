@@ -35,6 +35,7 @@ class delete: UIViewController {
     
     @IBAction func deletename(sender: AnyObject) {
         delete()
+        y.resignFirstResponder()
     }
  
     

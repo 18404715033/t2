@@ -29,19 +29,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iw-H6-Ri1">
-                                <rect key="frame" x="238" y="286" width="30" height="30"/>
-                                <state key="normal" title="查找"/>
-                                <connections>
-                                    <action selector="selectname:" destination="B5D-Gj-HEK" eventType="touchUpInside" id="bNj-Db-h6g"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tsH-fj-hiL">
                                 <rect key="frame" x="36" y="101" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iw-H6-Ri1">
+                                <rect key="frame" x="257" y="250" width="30" height="30"/>
+                                <state key="normal" title="查找"/>
+                                <connections>
+                                    <action selector="selectname:" destination="B5D-Gj-HEK" eventType="touchUpInside" id="bNj-Db-h6g"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -66,6 +66,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-mX-he7">
+                                <rect key="frame" x="-25" y="0.0" width="369" height="603"/>
+                                <connections>
+                                    <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qi5-7o-p1T"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MG0-yr-0Fe">
                                 <rect key="frame" x="36" y="69" width="51" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -161,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-444" y="101"/>
+            <point key="canvasLocation" x="-338" y="75"/>
         </scene>
         <!--Delete1-->
         <scene sceneID="i8w-G4-LW0">
@@ -188,7 +194,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92D-xL-yF7">
-                                <rect key="frame" x="126" y="201" width="34" height="30"/>
+                                <rect key="frame" x="143" y="157" width="34" height="30"/>
                                 <state key="normal" title=" 删除"/>
                                 <connections>
                                     <action selector="deletemobile:" destination="nEJ-Dh-WdD" eventType="touchUpInside" id="Yv2-At-iGk"/>
@@ -244,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JYt-Kk-uW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-412" y="874"/>
+            <point key="canvasLocation" x="-316" y="890"/>
         </scene>
         <!--Delete-->
         <scene sceneID="UfL-tC-Qzf">
@@ -265,18 +271,18 @@
                                     <segue destination="AnU-v1-Jda" kind="modal" id="rtx-GG-G0F"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8k-hI-god">
-                                <rect key="frame" x="131" y="205" width="30" height="30"/>
-                                <state key="normal" title="删除"/>
-                                <connections>
-                                    <action selector="deletename:" destination="bYW-SU-nC9" eventType="touchUpInside" id="1xP-9y-HxD"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wpw-Sa-smP">
                                 <rect key="frame" x="61" y="79" width="199" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8k-hI-god">
+                                <rect key="frame" x="140" y="187" width="30" height="30"/>
+                                <state key="normal" title="删除"/>
+                                <connections>
+                                    <action selector="deletename:" destination="bYW-SU-nC9" eventType="touchUpInside" id="1xP-9y-HxD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -286,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pkW-O3-dHK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="874"/>
+            <point key="canvasLocation" x="282" y="874"/>
         </scene>
         <!--Select View Controller-->
         <scene sceneID="ITY-5C-ilv">
@@ -327,6 +333,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="8tx-8q-G8t"/>
-        <segue reference="NCP-sX-wtx"/>
+        <segue reference="2Ib-Of-GBd"/>
     </inferredMetricsTieBreakers>
 </document>
